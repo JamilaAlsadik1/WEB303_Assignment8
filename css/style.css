@@ -1,0 +1,21 @@
+body{
+    max-width: 970px ;
+    margin: 20px auto;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.active{
+    background-color:yellow;
+}
+td{
+    background-color: white;
+}
