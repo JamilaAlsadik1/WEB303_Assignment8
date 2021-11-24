@@ -27,7 +27,7 @@ $(document).ready(function (){
     /////////////////////////////////////////////////////////////////////////////////
     //second try to search by input value and it works fine :)
     $("#name").keyup(function(i){
-        var rows=$("tbody").find("tr").show();
+      
         $("tbody tr").each(function () {
             let nameCol = $(this).children().first().text().toLowerCase();
                if(i.target.value === "") {
@@ -64,6 +64,10 @@ $(document).ready(function (){
                 return $(this).children(':eq(0)').text()[0].toLowerCase()==nTozArr[i];
             }).show();
         });
+    });
+
+    $(".btn.all").click(function(){
+        $("tbody").find("tr").show();
     });
     });
     //////////////////////////////////////////////////////////////////////////////////////
@@ -114,7 +118,7 @@ $(document).ready(function (){
                 }
             }
             $(".btn.b").append(" ("+arrayb.length+")");
-          
+            $(".btn.all").append(" ("+firstLetter.length+")");
      });
     
     
